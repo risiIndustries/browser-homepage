@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Cantarell&display=swap");
+
+html {
+  background: url("../images/Space-Needle.jpg");
+  background-size: cover;
+  font-family: 'Cantarell', sans-serif;
+  min-height: 100%; 
+}
+
+body {
+  color: white;
+  overflow: hidden; 
+}
+
+h2 {
+  font-size: 30px;
+}
+
+#search {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+#logoimage {
+  position: absolute;
+  transform: translate(-50%, -90%); 
+}
+
+#logotext {
+  font-size: 35px;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  display: block; 
+}
+
+#searchbar {
+  border-radius: 15px;
+  border: 1px solid white;
+  padding: 5px;
+  width: 40%;
+  font-size: large;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); 
+}
+
+#settings {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white; 
+}
+
+#datetime {
+  font-size: 30px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#settings:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#settingswindow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  visibility: hidden;
+}
+
+#stitle {
+  font-size: 40px;
+  transform: translateY(-60%);
+}
+
+#seselect {
+  font-size: 20px;
+  transform: translateY(-200%);
+  width: 50%;
+}
+
+#setitle {
+  transform: translateY(-120%);
+}
+
+#clocktitle {
+  transform: translateY(-180%);
+}
+
+#clockselect {
+  font-size: 20px;
+  transform: translateY(-280%);
+  width: 50%;
+}
+
+#noscript {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 30%);
+  color: red;
+  font-size: 30px;
+  text-align: center;
+}
