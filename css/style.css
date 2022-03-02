@@ -98,7 +98,7 @@ h2 {
 
 #seselect {
   font-size: 20px;
-  transform: translateY(-200%);
+  transform: translateY(-250%);
   width: 50%;
 }
 
@@ -112,7 +112,7 @@ h2 {
 
 #clockselect {
   font-size: 20px;
-  transform: translateY(-280%);
+  transform: translateY(-350%);
   width: 50%;
 }
 
