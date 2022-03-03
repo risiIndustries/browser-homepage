@@ -33,7 +33,8 @@ const searchEngines = {
     "Yahoo": "https://search.yahoo.com/search?p=",
     "Baidu": "https://www.baidu.com/s?wd=",
     "Yandex": "https://yandex.com/search/?text=",
-    "Brave": "https://search.brave.com/search?q="
+    "Brave": "https://search.brave.com/search?q=",
+    "StartPage": "https://www.startpage.com/sp/search?q="
 }
 
 let selectStr = "";
