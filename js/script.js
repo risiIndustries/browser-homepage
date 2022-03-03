@@ -4,6 +4,13 @@ const searchBar = document.getElementById("searchbar");
 const searchEngineSelect = document.getElementById("seselect");
 const clockSelect = document.getElementById("clockselect");
 
+const wallpapers = ["Birb", "DarkCamo", "Default", "Jellyfish", "Mountains", "Space-Needle"];
+
+const wallpaper = wallpapers[Math.floor(Math.random() * wallpapers.length)] + ".jpg";
+
+document.body.style.backgroundImage = `url(./images/${wallpaper})`;
+document.body.style.backgroundSize = "cover";
+
 if (getCookie("defaultengine") === "" || getCookie("defaultengine") === null) {
     console.log("No default search engine set, setting to DuckDuckGo");
     setCookie("defaultengine", "DuckDuckGo");
@@ -87,7 +94,7 @@ function formatAMPM(date) {
     hours = hours % 12;
     hours = hours ? hours : 12;
     minutes = minutes < 10 ? '0'+minutes : minutes;
-    let strTime = hours+':'+minutes+":"+("0"+date.getSeconds()).slice(-2)+ampm;
+    let strTime = hours+':'+minutes+ampm;
     return strTime;
 }
 
