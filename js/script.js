@@ -6,7 +6,7 @@ const clockSelect = document.getElementById("clockselect");
 
 const wallpapers = ["Birb", "Jellyfish", "Mountains", "Space-Needle"];
 
-const wallpaper = wallpapers[~~(Math.random() * wallpapers.length)]; + ".jpg";
+const wallpaper = wallpapers[~~(Math.random() * wallpapers.length)] + ".jpg";
 
 document.body.style.backgroundImage = `url(./images/${wallpaper})`;
 document.body.style.backgroundSize = "cover";
