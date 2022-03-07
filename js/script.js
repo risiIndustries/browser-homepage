@@ -4,7 +4,7 @@ const searchBar = document.getElementById("searchbar");
 const searchEngineSelect = document.getElementById("seselect");
 const clockSelect = document.getElementById("clockselect");
 
-const wallpapers = ["Birb", "DarkCamo", "Default", "Jellyfish", "Mountains", "Space-Needle"];
+const wallpapers = ["Birb", "Jellyfish", "Mountains", "Space-Needle"];
 
 const wallpaper = wallpapers[Math.floor(Math.random() * wallpapers.length)] + ".jpg";
 
