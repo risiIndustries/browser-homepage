@@ -12,8 +12,8 @@ document.body.style.backgroundImage = `url(./images/${wallpaper})`;
 document.body.style.backgroundSize = "cover";
 
 if (getCookie("defaultengine") === "" || getCookie("defaultengine") === null) {
-    console.log("No default search engine set, setting to DuckDuckGo");
-    setCookie("defaultengine", "DuckDuckGo");
+    console.log("No default search engine set, setting to Brave");
+    setCookie("defaultengine", "Brave");
     setEngine(getCookie("defaultengine"));
 }
 
