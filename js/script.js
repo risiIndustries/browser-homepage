@@ -27,6 +27,7 @@ setEngine(getCookie("defaultengine"));
 setTime(getCookie("timeformat"));
 
 const searchEngines = {
+    "risiSearx": "https://searx.risi.io/",
     "DuckDuckGo": "https://duckduckgo.com/?q=",
     "Google": "https://www.google.com/search?q=",
     "Bing": "https://www.bing.com/search?q=",
