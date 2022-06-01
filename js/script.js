@@ -13,7 +13,7 @@ document.body.style.backgroundSize = "cover";
 
 if (getCookie("defaultengine") === "" || getCookie("defaultengine") === null) {
     console.log("No default search engine set, setting to Brave");
-    setCookie("defaultengine", "Brave");
+    setCookie("defaultengine", "risiSearx");
     setEngine(getCookie("defaultengine"));
 }
 
