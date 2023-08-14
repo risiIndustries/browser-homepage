@@ -11,9 +11,9 @@ const wallpaper = wallpapers[Math.floor(Math.random() * wallpapers.length)] + ".
 document.body.style.backgroundImage = `url(./images/${wallpaper})`;
 document.body.style.backgroundSize = "cover";
 
-if (getCookie("defaultengine") === "" || getCookie("defaultengine") === null) {
-  console.log("No default search engine set, setting to risiSearx");
-  setCookie("defaultengine", "risiSearx");
+if (getCookie("defaultengine") === "" || getCookie("defaultengine") === "risiSearx" || getCookie("defaultengine") === null) {
+  console.log("No default search engine set, setting to DuckDuckGo");
+  setCookie("defaultengine", "DuckDuckGo");
   setEngine(getCookie("defaultengine"));
 }
 
@@ -27,7 +27,6 @@ setEngine(getCookie("defaultengine"));
 setTime(getCookie("timeformat"));
 
 const searchEngines = {
-  "risiSearx": "https://searx.risi.io/search?q=",
   "DuckDuckGo": "https://duckduckgo.com/?q=",
   "Google": "https://www.google.com/search?q=",
   "Bing": "https://www.bing.com/search?q=",
